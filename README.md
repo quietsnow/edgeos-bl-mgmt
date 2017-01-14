@@ -9,7 +9,7 @@ To get started, perform these steps on your EdgeRouter from a CLI configure prom
 1. ```set firewall group network-group Nets4-BlackList description 'Blacklisted IPv4 Sources'```  
 2. ```cp updBlackList.sh /config/scripts/updBlackList.sh```  
 3. ```cp fw-BlackList-URLs.txt /config/user-data/fw-BlackList-URLs.txt```  
-4. ```cp loadBlackList.sh /cofnig/scripts/post-config.d/loadBlackList.sh```  
+4. ```cp loadBlackList.sh /config/scripts/post-config.d/loadBlackList.sh```  
 5. ```set system task-scheduler task Update-Blacklists executable path /config/scripts/updBlackList.sh```  
 6. ```set system task-scheduler task Update-Blacklists interval 12h```  
 7. ```/config/scripts/updBlackList.sh```  
